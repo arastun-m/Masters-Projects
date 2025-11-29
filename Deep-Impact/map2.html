@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5880448aa061123101d724fa28924609 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5880448aa061123101d724fa28924609" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5880448aa061123101d724fa28924609 = L.map(
+                "map_5880448aa061123101d724fa28924609",
+                {
+                    center: [52.49008788881608, -2.0497880894647267],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_5880448aa061123101d724fa28924609);
+
+            
+
+        
+    
+            var tile_layer_2b3691142ef6328ecdb03289988c2d7b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_2b3691142ef6328ecdb03289988c2d7b.addTo(map_5880448aa061123101d724fa28924609);
+        
+    
+            var circle_7b87af9a1c1d760e99e94de7e14578ef = L.circle(
+                [52.49008788881608, -2.0497880894647267],
+                {"bubblingMouseEvents": true, "color": "rgb(255, 100, 50)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(255, 100, 50)", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14395.16801661452, "stroke": true, "weight": 3}
+            ).addTo(map_5880448aa061123101d724fa28924609);
+        
+    
+            circle_7b87af9a1c1d760e99e94de7e14578ef.bindTooltip(
+                `<div>
+                     Blast Radius: 14395.17m<br>Center: 52.49,-2.05<br>Population: 1770466
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9b217e75caa6fe1316487523dddfce87 = L.marker(
+                [52.03, 0.21],
+                {}
+            ).addTo(map_5880448aa061123101d724fa28924609);
+        
+    
+            var icon_c08ad04110ddd834e394676e8ea6c20d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefex": "fa", "prefix": "glyphicon"}
+            );
+            marker_9b217e75caa6fe1316487523dddfce87.setIcon(icon_c08ad04110ddd834e394676e8ea6c20d);
+        
+    
+            marker_9b217e75caa6fe1316487523dddfce87.bindTooltip(
+                `<div>
+                     Entry Point<br>Coordinates: 52.03, 0.21
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4164e6e72ec0d0e55525bc54ceed5924 = L.polyline(
+                [[52.03, 0.21], [52.49008788881608, -2.0497880894647267]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "5, 5", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_5880448aa061123101d724fa28924609);
+        
+    
+            poly_line_4164e6e72ec0d0e55525bc54ceed5924.bindTooltip(
+                `<div>
+                     Trajectory
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+                var lat_lng_popup_feeb22a2cb7317d0d2723ca9cafc9a59 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_feeb22a2cb7317d0d2723ca9cafc9a59
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_5880448aa061123101d724fa28924609);
+                    }
+                map_5880448aa061123101d724fa28924609.on('click', latLngPop);
+            
+    
+            var circle_6b0ace61b4304c8ae44006f1ac0e2b19 = L.circle(
+                [52.53775594238016, -2.4015826227299897],
+                {"bubblingMouseEvents": true, "color": "rgb(255, 100, 50)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(255, 100, 50)", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6444.633590736551, "stroke": true, "weight": 3}
+            ).addTo(map_5880448aa061123101d724fa28924609);
+        
+    
+            circle_6b0ace61b4304c8ae44006f1ac0e2b19.bindTooltip(
+                `<div>
+                     Blast Radius: 6444.63m<br>Center: 52.54,-2.40<br>Population: 17285
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a5c7689bbcd67bad21bff3b130cf7af6 = L.marker(
+                [52.03, 0.21],
+                {}
+            ).addTo(map_5880448aa061123101d724fa28924609);
+        
+    
+            var icon_8b26733780fb7c1fe9aeeda3b2ebf0ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefex": "fa", "prefix": "glyphicon"}
+            );
+            marker_a5c7689bbcd67bad21bff3b130cf7af6.setIcon(icon_8b26733780fb7c1fe9aeeda3b2ebf0ab);
+        
+    
+            marker_a5c7689bbcd67bad21bff3b130cf7af6.bindTooltip(
+                `<div>
+                     Entry Point<br>Coordinates: 52.03, 0.21
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9811b1be9bdc3eba40d0a8ad52805b9f = L.polyline(
+                [[52.03, 0.21], [52.53775594238016, -2.4015826227299897]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "5, 5", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_5880448aa061123101d724fa28924609);
+        
+    
+            poly_line_9811b1be9bdc3eba40d0a8ad52805b9f.bindTooltip(
+                `<div>
+                     Trajectory
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+                var lat_lng_popup_0fbd3988449fcf415691c12023ab878b = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_0fbd3988449fcf415691c12023ab878b
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_5880448aa061123101d724fa28924609);
+                    }
+                map_5880448aa061123101d724fa28924609.on('click', latLngPop);
+            
+    
+            var circle_871f28f82903b640985e202f2be3dd77 = L.circle(
+                [52.618094445722555, -2.419730645638822],
+                {"bubblingMouseEvents": true, "color": "rgb(255, 100, 50)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(255, 100, 50)", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12648.48039096443, "stroke": true, "weight": 3}
+            ).addTo(map_5880448aa061123101d724fa28924609);
+        
+    
+            circle_871f28f82903b640985e202f2be3dd77.bindTooltip(
+                `<div>
+                     Blast Radius: 12648.48m<br>Center: 52.62,-2.42<br>Population: 183055
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_48d25126dfe39c8e847f0ae0574361dd = L.marker(
+                [52.03, 0.21],
+                {}
+            ).addTo(map_5880448aa061123101d724fa28924609);
+        
+    
+            var icon_11c6ecbc3efb82d6510c4a20b7ae8cc5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefex": "fa", "prefix": "glyphicon"}
+            );
+            marker_48d25126dfe39c8e847f0ae0574361dd.setIcon(icon_11c6ecbc3efb82d6510c4a20b7ae8cc5);
+        
+    
+            marker_48d25126dfe39c8e847f0ae0574361dd.bindTooltip(
+                `<div>
+                     Entry Point<br>Coordinates: 52.03, 0.21
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_d2b03adc3875f7ca4b0d65d6d30e02b8 = L.polyline(
+                [[52.03, 0.21], [52.618094445722555, -2.419730645638822]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "5, 5", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_5880448aa061123101d724fa28924609);
+        
+    
+            poly_line_d2b03adc3875f7ca4b0d65d6d30e02b8.bindTooltip(
+                `<div>
+                     Trajectory
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+                var lat_lng_popup_962d8d557d3e4ad8ad47e2078b5dc4cb = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_962d8d557d3e4ad8ad47e2078b5dc4cb
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_5880448aa061123101d724fa28924609);
+                    }
+                map_5880448aa061123101d724fa28924609.on('click', latLngPop);
+            
+    
+            var circle_d793cb050cc3aef391a157ed9f10ece5 = L.circle(
+                [52.580423331116876, -2.151148531653263],
+                {"bubblingMouseEvents": true, "color": "rgb(255, 100, 50)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(255, 100, 50)", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6878.673171321307, "stroke": true, "weight": 3}
+            ).addTo(map_5880448aa061123101d724fa28924609);
+        
+    
+            circle_d793cb050cc3aef391a157ed9f10ece5.bindTooltip(
+                `<div>
+                     Blast Radius: 6878.67m<br>Center: 52.58,-2.15<br>Population: 338917
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ee307c29be251f545f6ccc3722f34186 = L.marker(
+                [52.03, 0.21],
+                {}
+            ).addTo(map_5880448aa061123101d724fa28924609);
+        
+    
+            var icon_88d7629e0ebb5101c6caba0f5329832d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefex": "fa", "prefix": "glyphicon"}
+            );
+            marker_ee307c29be251f545f6ccc3722f34186.setIcon(icon_88d7629e0ebb5101c6caba0f5329832d);
+        
+    
+            marker_ee307c29be251f545f6ccc3722f34186.bindTooltip(
+                `<div>
+                     Entry Point<br>Coordinates: 52.03, 0.21
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_a2adad7bfcf736f09fe9d3028e368828 = L.polyline(
+                [[52.03, 0.21], [52.580423331116876, -2.151148531653263]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "5, 5", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_5880448aa061123101d724fa28924609);
+        
+    
+            poly_line_a2adad7bfcf736f09fe9d3028e368828.bindTooltip(
+                `<div>
+                     Trajectory
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+                var lat_lng_popup_3d1dcfd4b31024ed7fce1a543004da0c = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_3d1dcfd4b31024ed7fce1a543004da0c
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_5880448aa061123101d724fa28924609);
+                    }
+                map_5880448aa061123101d724fa28924609.on('click', latLngPop);
+            
+    
+            var circle_e2e078654dd8509493693f5d9f2c669e = L.circle(
+                [52.519540415546544, -2.130775362355422],
+                {"bubblingMouseEvents": true, "color": "rgb(255, 100, 50)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(255, 100, 50)", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3050.5512719240323, "stroke": true, "weight": 3}
+            ).addTo(map_5880448aa061123101d724fa28924609);
+        
+    
+            circle_e2e078654dd8509493693f5d9f2c669e.bindTooltip(
+                `<div>
+                     Blast Radius: 3050.55m<br>Center: 52.52,-2.13<br>Population: 70795
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_56a9df4b8c692600aa875b53dac71633 = L.marker(
+                [52.03, 0.21],
+                {}
+            ).addTo(map_5880448aa061123101d724fa28924609);
+        
+    
+            var icon_0fb0d0ed3595f49ca75734b90c551ccf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefex": "fa", "prefix": "glyphicon"}
+            );
+            marker_56a9df4b8c692600aa875b53dac71633.setIcon(icon_0fb0d0ed3595f49ca75734b90c551ccf);
+        
+    
+            marker_56a9df4b8c692600aa875b53dac71633.bindTooltip(
+                `<div>
+                     Entry Point<br>Coordinates: 52.03, 0.21
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_6ffafd0aa69e10146b3afa84024b10be = L.polyline(
+                [[52.03, 0.21], [52.519540415546544, -2.130775362355422]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "5, 5", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_5880448aa061123101d724fa28924609);
+        
+    
+            poly_line_6ffafd0aa69e10146b3afa84024b10be.bindTooltip(
+                `<div>
+                     Trajectory
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+                var lat_lng_popup_72d93b0f3786e8328308001b268b9ee3 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_72d93b0f3786e8328308001b268b9ee3
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_5880448aa061123101d724fa28924609);
+                    }
+                map_5880448aa061123101d724fa28924609.on('click', latLngPop);
+            
+    
+            var circle_08cd3b4a3ccc82453065330754604197 = L.circle(
+                [52.468190581067425, -2.1012961460008057],
+                {"bubblingMouseEvents": true, "color": "rgb(255, 100, 50)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(255, 100, 50)", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5880448aa061123101d724fa28924609);
+        
+    
+            circle_08cd3b4a3ccc82453065330754604197.bindTooltip(
+                `<div>
+                     Blast Radius: 0.00m<br>Center: 52.47,-2.10<br>Population: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_49c50f59070cfb6f89cbd6c4da5e0fb3 = L.marker(
+                [52.03, 0.21],
+                {}
+            ).addTo(map_5880448aa061123101d724fa28924609);
+        
+    
+            var icon_286f0078f571c4bceeb1e5d847a41cc0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefex": "fa", "prefix": "glyphicon"}
+            );
+            marker_49c50f59070cfb6f89cbd6c4da5e0fb3.setIcon(icon_286f0078f571c4bceeb1e5d847a41cc0);
+        
+    
+            marker_49c50f59070cfb6f89cbd6c4da5e0fb3.bindTooltip(
+                `<div>
+                     Entry Point<br>Coordinates: 52.03, 0.21
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0c5df444169836bdad6b64d7b24a03a5 = L.polyline(
+                [[52.03, 0.21], [52.468190581067425, -2.1012961460008057]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "5, 5", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_5880448aa061123101d724fa28924609);
+        
+    
+            poly_line_0c5df444169836bdad6b64d7b24a03a5.bindTooltip(
+                `<div>
+                     Trajectory
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+                var lat_lng_popup_9a0d23401dd20459486fdb38b4a1f068 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_9a0d23401dd20459486fdb38b4a1f068
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_5880448aa061123101d724fa28924609);
+                    }
+                map_5880448aa061123101d724fa28924609.on('click', latLngPop);
+            
+    
+            var circle_3ecd418c4399054980ce9514218e3f0f = L.circle(
+                [52.52517108562696, -2.0559046303271487],
+                {"bubblingMouseEvents": true, "color": "rgb(255, 100, 50)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(255, 100, 50)", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17346.783323517455, "stroke": true, "weight": 3}
+            ).addTo(map_5880448aa061123101d724fa28924609);
+        
+    
+            circle_3ecd418c4399054980ce9514218e3f0f.bindTooltip(
+                `<div>
+                     Blast Radius: 17346.78m<br>Center: 52.53,-2.06<br>Population: 2138856
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_093b584208e08ee81ac25a9cf8ec8128 = L.marker(
+                [52.03, 0.21],
+                {}
+            ).addTo(map_5880448aa061123101d724fa28924609);
+        
+    
+            var icon_3b0da8536068e64d034028e085e7951a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefex": "fa", "prefix": "glyphicon"}
+            );
+            marker_093b584208e08ee81ac25a9cf8ec8128.setIcon(icon_3b0da8536068e64d034028e085e7951a);
+        
+    
+            marker_093b584208e08ee81ac25a9cf8ec8128.bindTooltip(
+                `<div>
+                     Entry Point<br>Coordinates: 52.03, 0.21
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_40c81efeef9e41c65c965d2ba5b61256 = L.polyline(
+                [[52.03, 0.21], [52.52517108562696, -2.0559046303271487]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "5, 5", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_5880448aa061123101d724fa28924609);
+        
+    
+            poly_line_40c81efeef9e41c65c965d2ba5b61256.bindTooltip(
+                `<div>
+                     Trajectory
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+                var lat_lng_popup_5c0923e35e1951e7a416d49da6598bed = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_5c0923e35e1951e7a416d49da6598bed
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_5880448aa061123101d724fa28924609);
+                    }
+                map_5880448aa061123101d724fa28924609.on('click', latLngPop);
+            
+    
+            var circle_ec9ed582ee226cb869329a851cc2961d = L.circle(
+                [52.38318853529612, -1.4432821845179262],
+                {"bubblingMouseEvents": true, "color": "rgb(255, 100, 50)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(255, 100, 50)", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11563.052788008992, "stroke": true, "weight": 3}
+            ).addTo(map_5880448aa061123101d724fa28924609);
+        
+    
+            circle_ec9ed582ee226cb869329a851cc2961d.bindTooltip(
+                `<div>
+                     Blast Radius: 11563.05m<br>Center: 52.38,-1.44<br>Population: 450835
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_647f8bebe3fa2025f1ac56c700e516e7 = L.marker(
+                [52.03, 0.21],
+                {}
+            ).addTo(map_5880448aa061123101d724fa28924609);
+        
+    
+            var icon_5ec7ac249de0526d524947493cd4f83e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefex": "fa", "prefix": "glyphicon"}
+            );
+            marker_647f8bebe3fa2025f1ac56c700e516e7.setIcon(icon_5ec7ac249de0526d524947493cd4f83e);
+        
+    
+            marker_647f8bebe3fa2025f1ac56c700e516e7.bindTooltip(
+                `<div>
+                     Entry Point<br>Coordinates: 52.03, 0.21
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_efed4405439033ffe3a030806327f09d = L.polyline(
+                [[52.03, 0.21], [52.38318853529612, -1.4432821845179262]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "5, 5", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_5880448aa061123101d724fa28924609);
+        
+    
+            poly_line_efed4405439033ffe3a030806327f09d.bindTooltip(
+                `<div>
+                     Trajectory
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+                var lat_lng_popup_5f893138b01562df74e44d5659f9c32d = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_5f893138b01562df74e44d5659f9c32d
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_5880448aa061123101d724fa28924609);
+                    }
+                map_5880448aa061123101d724fa28924609.on('click', latLngPop);
+            
+    
+            var circle_19a2945af635902c5bc214a6a1ba2c6c = L.circle(
+                [52.51628234973258, -2.0758675573702874],
+                {"bubblingMouseEvents": true, "color": "rgb(255, 100, 50)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(255, 100, 50)", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5790.199701849836, "stroke": true, "weight": 3}
+            ).addTo(map_5880448aa061123101d724fa28924609);
+        
+    
+            circle_19a2945af635902c5bc214a6a1ba2c6c.bindTooltip(
+                `<div>
+                     Blast Radius: 5790.20m<br>Center: 52.52,-2.08<br>Population: 357141
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_798525c6ee6190cd1a3a13108050094e = L.marker(
+                [52.03, 0.21],
+                {}
+            ).addTo(map_5880448aa061123101d724fa28924609);
+        
+    
+            var icon_50036319898079c2e704bcc678e3dc79 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefex": "fa", "prefix": "glyphicon"}
+            );
+            marker_798525c6ee6190cd1a3a13108050094e.setIcon(icon_50036319898079c2e704bcc678e3dc79);
+        
+    
+            marker_798525c6ee6190cd1a3a13108050094e.bindTooltip(
+                `<div>
+                     Entry Point<br>Coordinates: 52.03, 0.21
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b4c830ea4321d6432313feb87d05fa9f = L.polyline(
+                [[52.03, 0.21], [52.51628234973258, -2.0758675573702874]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "5, 5", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_5880448aa061123101d724fa28924609);
+        
+    
+            poly_line_b4c830ea4321d6432313feb87d05fa9f.bindTooltip(
+                `<div>
+                     Trajectory
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+                var lat_lng_popup_79716a126d4f58ee570148c33ef7a3ee = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_79716a126d4f58ee570148c33ef7a3ee
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_5880448aa061123101d724fa28924609);
+                    }
+                map_5880448aa061123101d724fa28924609.on('click', latLngPop);
+            
+    
+            var circle_85cbcd908bbd9653238ff312e004384e = L.circle(
+                [52.54002775546781, -2.2944179337500543],
+                {"bubblingMouseEvents": true, "color": "rgb(255, 100, 50)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(255, 100, 50)", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2312.799331571103, "stroke": true, "weight": 3}
+            ).addTo(map_5880448aa061123101d724fa28924609);
+        
+    
+            circle_85cbcd908bbd9653238ff312e004384e.bindTooltip(
+                `<div>
+                     Blast Radius: 2312.80m<br>Center: 52.54,-2.29<br>Population: 1221
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_25a1a927fd24257f2161b5b995d8306b = L.marker(
+                [52.03, 0.21],
+                {}
+            ).addTo(map_5880448aa061123101d724fa28924609);
+        
+    
+            var icon_3d3ccb7c8ba2188d1cad00979e26be5b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefex": "fa", "prefix": "glyphicon"}
+            );
+            marker_25a1a927fd24257f2161b5b995d8306b.setIcon(icon_3d3ccb7c8ba2188d1cad00979e26be5b);
+        
+    
+            marker_25a1a927fd24257f2161b5b995d8306b.bindTooltip(
+                `<div>
+                     Entry Point<br>Coordinates: 52.03, 0.21
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_19867f0c098326ed3240bb98da883ffb = L.polyline(
+                [[52.03, 0.21], [52.54002775546781, -2.2944179337500543]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "5, 5", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_5880448aa061123101d724fa28924609);
+        
+    
+            poly_line_19867f0c098326ed3240bb98da883ffb.bindTooltip(
+                `<div>
+                     Trajectory
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+                var lat_lng_popup_7927b01c8182be6dfa966275b8d2bbce = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_7927b01c8182be6dfa966275b8d2bbce
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_5880448aa061123101d724fa28924609);
+                    }
+                map_5880448aa061123101d724fa28924609.on('click', latLngPop);
+            
+</script>
+</html>

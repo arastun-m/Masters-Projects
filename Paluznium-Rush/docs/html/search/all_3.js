@@ -1,0 +1,6 @@
+var searchData=
+[
+  ['expect_5fnear_0',['expect_near',['../test__circuit__simulator_8cpp.html#a38379baf600e4125afd2c60c11b8cc8a',1,'test_circuit_simulator.cpp']]],
+  ['export_5fperformance_5fdata_1',['export_performance_data',['../post__process_8cpp.html#abbb8cf3f44de71abb412625509c8dd34',1,'export_performance_data(int num_units, int *circuit_vector, Stream feed, double profit, double *palusznium_product, double *gormanium_product, double *tailings_product):&#160;post_process.cpp'],['../post__process_8h.html#abbb8cf3f44de71abb412625509c8dd34',1,'export_performance_data(int num_units, int *circuit_vector, Stream feed, double profit, double *palusznium_product, double *gormanium_product, double *tailings_product):&#160;post_process.cpp']]],
+  ['export_5funit_5fdata_2',['export_unit_data',['../post__process_8cpp.html#a918b7490135e3882c3dab0369cf06e4e',1,'export_unit_data(std::vector&lt; Stream &gt; &amp;unit_feeds, std::vector&lt; Stream &gt; &amp;unit_concentrates, std::vector&lt; Stream &gt; &amp;unit_tailings):&#160;post_process.cpp'],['../post__process_8h.html#a918b7490135e3882c3dab0369cf06e4e',1,'export_unit_data(std::vector&lt; Stream &gt; &amp;unit_feeds, std::vector&lt; Stream &gt; &amp;unit_concentrates, std::vector&lt; Stream &gt; &amp;unit_tailings):&#160;post_process.cpp']]]
+];

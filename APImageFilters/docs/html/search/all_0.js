@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['apimagefilters_0',['APImageFilters',['../class_a_p_image_filters.html',1,'']]],
+  ['applyboxblur_1',['applyBoxBlur',['../class_filter.html#a18768b70b9085be9017491ac4aec87d3',1,'Filter']]],
+  ['applybrightness_2',['applyBrightness',['../class_filter.html#a6b67a4caa154fd4cc49e238a1e38f004',1,'Filter']]],
+  ['applyedgedetection_3',['applyEdgeDetection',['../class_filter.html#a86ff25132b55275c93b211836992d421',1,'Filter']]],
+  ['applygaussianblur_4',['applyGaussianBlur',['../class_filter.html#a58279610089eb16d974fa9ca7742465c',1,'Filter']]],
+  ['applygaussianblur1dhorizontal_5',['applyGaussianBlur1DHorizontal',['../class_filter.html#a0e1187558ac4bb9fe969ccb1cc824157',1,'Filter']]],
+  ['applygaussianblur1dvertical_6',['applyGaussianBlur1DVertical',['../class_filter.html#aa1afe9697ec515464b9aca935258d80d',1,'Filter']]],
+  ['applygaussianblur1dx_7',['applyGaussianBlur1DX',['../class_filter.html#a53c1d6faf9f216dc79faaff2959616cd',1,'Filter']]],
+  ['applygaussianblur1dy_8',['applyGaussianBlur1DY',['../class_filter.html#a3096d9dc28ea92ff906fd7afcb5e4f6e',1,'Filter']]],
+  ['applygaussianblur1dz_9',['applyGaussianBlur1DZ',['../class_filter.html#aa8a40b79a75632094a81f61dcfab8595',1,'Filter']]],
+  ['applygaussianblur3d_10',['applyGaussianBlur3D',['../class_filter.html#a6d63efe5daa43b4a536cc1eaddce1c12',1,'Filter']]],
+  ['applygreyscale_11',['applyGreyscale',['../class_filter.html#a09b54d072f0a72976fafd09e8b23c152',1,'Filter']]],
+  ['applyhistogramequalization_12',['applyHistogramEqualization',['../class_filter.html#a4872e1b98c401b029df320a9d73330eb',1,'Filter']]],
+  ['applymedianblur_13',['applyMedianBlur',['../class_filter.html#a83104b81015c19f4f7e4c68c1f977d3f',1,'Filter']]],
+  ['applymedianblur3d_14',['applyMedianBlur3D',['../class_filter.html#ab48820da9f7b37bafa1738dd80d1a606',1,'Filter']]],
+  ['applysaltpeppernoise_15',['applySaltPepperNoise',['../class_filter.html#a60f83dc7f4ef360818273dd7d84ef4dd',1,'Filter']]],
+  ['applysharpening_16',['applySharpening',['../class_filter.html#a8e1f93005a3e619355a6557debb2ef20',1,'Filter']]],
+  ['applythreshold_17',['applyThreshold',['../class_filter.html#a2c8d556a15965b73899004646df32602',1,'Filter']]]
+];

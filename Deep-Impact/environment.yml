@@ -1,0 +1,15 @@
+name: hygiea-env
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.8
+  - numpy
+  - scipy
+  - pandas
+  - pytest
+  - pip
+  - pip:
+    - flake8
+    - -r requirements.txt
+    - -e .

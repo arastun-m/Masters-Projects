@@ -1,0 +1,11 @@
+[
+  {
+    "max_iterations": 2000,
+    "stall_iterations": 70,
+    "cross_prob": 0.8,
+    "mutate_prob": 0.3,
+    "pop_size": 200,
+    "number_of_units": 10,
+    "tournament_size": 5
+  }
+]

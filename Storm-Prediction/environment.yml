@@ -1,0 +1,29 @@
+name: acds2-irma
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - pytest
+  - flake8
+  - numpy>1.2
+  - scipy
+  - matplotlib
+  - pandas
+  - scikit-learn
+  - pytorch
+  - torchvision
+  - h5py
+  - ipython
+  - pillow
+  - jupyter
+  - ipywidgets
+  - tqdm
+  - seaborn
+  - cartopy
+  - statsmodels
+  - pip:
+      - huggingface_hub
+      - livelossplot
+      - torchsummary

@@ -1,0 +1,8 @@
+var searchData=
+[
+  ['unit_0',['Unit',['../struct_unit.html',1,'Unit'],['../struct_unit.html#ace09f74c445824aedd237b546edc8e1f',1,'Unit::Unit(int c_dest, int t_dest, const CUnit &amp;c)'],['../struct_unit.html#a109f5950a9be0f3d1f8a3e2c97eb2bf6',1,'Unit::Unit()=default']]],
+  ['unit_5fconcentrates_1',['unit_concentrates',['../simulate__flow_8cpp.html#a23c566edc47220c2814289b6c97673ac',1,'simulate_flow.cpp']]],
+  ['unit_5ffeeds_2',['unit_feeds',['../simulate__flow_8cpp.html#af385ab483bbd33941ccd3f125b6ec1e7',1,'simulate_flow.cpp']]],
+  ['unit_5ftailings_3',['unit_tailings',['../simulate__flow_8cpp.html#a3954a01c5238d2f83e2b6c2a7d550a46',1,'simulate_flow.cpp']]],
+  ['units_4',['units',['../class_circuit.html#aa9bd1c2071b0b5175ea0b0bcaf2d786c',1,'Circuit']]]
+];

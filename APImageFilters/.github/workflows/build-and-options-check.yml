@@ -1,0 +1,43 @@
+name: compile and check command line options
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: ${{github.workspace}}
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Configure CMake
+      run: cmake -S . -B build
+
+    - name: Build
+      run: cmake --build build
+
+    - name: Run tests
+      run: |
+        cd build
+        ctest --output-on-failure --no-compress-output -T Test --output-junit test_results.xml
+
+    - name: Publish JUnit Report
+      uses: mikepenz/action-junit-report@v5
+      if: success() || failure() # always run even if the previous step fails
+      with:
+        annotate_only: true # forked repo cannot write to checks so just do annotations
+        report_paths: '**/test_results.xml'
+        check_name: JUnit Report
+        fail_on_failure: true
+        require_passed_tests: true
+        include_passed: true

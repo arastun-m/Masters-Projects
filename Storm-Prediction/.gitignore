@@ -1,0 +1,26 @@
+# Created by pytest automatically.
+
+# Ignore data (10gb)
+data/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore pytest cache
+.pytest_cache/
+
+# Ignore virtual environment
+.env/
+.venv/
+
+# Ignore Mac OS temporary files
+.DS_Store
+
+# Ignore build/installation files
+build/
+dist/
+*.egg-info/
